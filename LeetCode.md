@@ -55,7 +55,8 @@ class Solution(object):
 ```
 
 ## [633. 平方数之和][633]
-> 费马平方和定理，一个非负整数C, C能够表示为两个整数的平方和，当且仅当C的所有形如 4k+34k+3 的质因子的幂次均为偶数。
+> 费马平方和定理，一个非负整数C, C能够表示为两个整数的平方和，当且仅当C的所有形如 4k+3的质因子的幂次均为偶数。  
+费马平方和定理的表述是：奇质数能表示为两个平方数之和的充分必要条件是该质数被4除余1。
 ``` python
 class Solution(object):
     def judgeSquareSum(self, c):
@@ -71,6 +72,22 @@ class Solution(object):
             i += 1
         return (c % 4) != 3
 
+```
+> 常规双指针
+``` python
+class Solution(object):
+    def judgeSquareSum(self, c):
+        a = 0
+        b = int(c**0.5)
+        while a <= b:
+            temp = a**2 + b**2
+            if c == temp:
+                return True
+            elif c < temp:
+                b -= 1
+            else:
+                a += 1
+        return False
 ```
 
 
