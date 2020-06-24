@@ -54,7 +54,26 @@ class Solution(object):
         return maxPathLength
 ```
 
+## [633. 平方数之和][633]
+> 费马平方和定理，一个非负整数C, C能够表示为两个整数的平方和，当且仅当C的所有形如 4k+34k+3 的质因子的幂次均为偶数。
+``` python
+class Solution(object):
+    def judgeSquareSum(self, c):
+        i = 2
+        while (i * i < c):
+            n = 0
+            if((c % i) == 0):
+                while((c % i) == 0):
+                    n += 1
+                    c = c / i
+                if((n % 2 != 0) and (i % 4 == 3)):
+                    return False
+            i += 1
+        return (c % 4) != 3
+
+```
 
 
 [34]:https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 [388]:https://leetcode-cn.com/problems/longest-absolute-file-path/
+[633]:https://leetcode-cn.com/problems/sum-of-square-numbers/
