@@ -80,10 +80,11 @@ class Solution(object):
         a = 0
         b = int(c**0.5)
         while a <= b:
-            temp = a**2 + b**2
-            if c == temp:
+            x = a**2
+            y = c - b**2
+            if x == y:
                 return True
-            elif c < temp:
+            elif y < x:
                 b -= 1
             else:
                 a += 1
