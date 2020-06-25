@@ -43,9 +43,9 @@ File -> Reload with Encoding -> UTF8
 Buid System 配置UTF8 ->"env": {"PYTHONIOENCODING": "utf8"}
 
 
-## 5. window python提示ModuleNotFoundError: No module named 'requests'的解决办法
-
-> 进入python 安装目录 Scripts 打开cmd 执行  
+## 5. python 库安装
+> 例如 window python提示ModuleNotFoundError: No module named 'requests'的解决办法  
+进入python 安装目录 Scripts 打开cmd 执行  
 pip install requests  
 pip install --user beautifulsoup4  
 
@@ -62,7 +62,7 @@ Ctrl+B执行
 > "/" 为浮点数除法，返回浮点结果  
 "//" 表示整数除法，返回不大于结果的一个最大整数  
 "\*\*" 幂运算   
-4\*\*0.5 计算的平方根   
+4\*\*0.5 计算4的平方根   
 4\*\*2 计算4的二次方  
 
 
