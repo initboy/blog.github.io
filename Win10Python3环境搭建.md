@@ -4,6 +4,7 @@
 
 - 1.1 Sublime Text 3 [下载][st3]
 - 1.2 Python 3 [下载][py3]
+- 1.3 Pycharm 免费教育版[下载][edu]
 
 ## 2. Sublime Text 3 插件安装
 
@@ -69,3 +70,4 @@ Ctrl+B执行
 ---
 [st3]:http://www.sublimetext.cn/3
 [py3]:https://www.python.org/downloads/
+[edu]:https://www.jetbrains.com/pycharm-edu/
